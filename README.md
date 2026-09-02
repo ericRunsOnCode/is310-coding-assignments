@@ -12,11 +12,11 @@
 
 3. VS Code
 
-![VS Code Installation](C:\Users\ericr\is310-coding-assignments\images\vsCodeProof.png)
+![VS Code Installation](images\vsCodeProof.png)
 
 4. Hypothesis Username
 ecampos3
 
 5. AI Tool/Workflow
 Detail what AI tool, if any, do you plan to use this semester.
-I do not plan on using any AI tool. If a programming challenge becomes too difficult and I genuinely need assistance, I would most likely use Copilot. 
+I do not plan on using any AI tool. If a programming challenge becomes too difficult and I genuinely need assistance, I would most likely use Copilot.
