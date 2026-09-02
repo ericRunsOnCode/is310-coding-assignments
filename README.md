@@ -4,15 +4,15 @@
 
 1. Python
 
-![Python Installation](images\pythonProof.png)
+![Python Installation](images/pythonProof.png)
 
 2. Git
 
-![Git Installation](images\gitProof.png)
+![Git Installation](images/gitProof.png)
 
 3. VS Code
 
-![VS Code Installation](images\vsCodeProof.png)
+![VS Code Installation](images/vsCodeProof.png)
 
 4. Hypothesis Username
 ecampos3
