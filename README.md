@@ -12,7 +12,7 @@
 
 3. VS Code
 
-![VS Code Installation](images\vsCodeProof.png)
+![VS Code Installation](C:\Users\ericr\is310-coding-assignments\images\vsCodeProof.png)
 
 4. Hypothesis Username
 ecampos3
