@@ -1,4 +1,4 @@
-# Finding Bigotry In And Around Games : Maze
+# In And Around Games : Maze
 
 ## Eric Campos
 
