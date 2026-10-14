@@ -78,4 +78,4 @@ while True:
         console.print("Entry not added. Please try again.", style = "bold red")
 
 console.print(table)
-console.print("\n[bold green]This program wrote data to 'csvfile.csv' at 'python-libraries/csvfile.csv' [/bold green]")
+console.print(f"\n[bold green]This program wrote data to 'csvfile.csv' at {os.path.abspath('csvfile.csv')} [/bold green]")
