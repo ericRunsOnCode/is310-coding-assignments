@@ -10,7 +10,7 @@ This program holds onto video game data.
 
 <br>
 
-## Requirments
+## Requirements
 
 Consult the requirements.txt file. 
 <br>
