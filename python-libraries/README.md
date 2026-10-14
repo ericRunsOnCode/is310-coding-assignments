@@ -14,7 +14,7 @@ This program holds onto video game data.
 
 Consult the requirements.txt file. 
 <br>
-To install the requirments to run this file, run 'python -m pip install -r requirments.txt'
+To install the requirments to run this file, run 'python -m pip install -r requirements.txt'
 <br>
 
 ### Usage
