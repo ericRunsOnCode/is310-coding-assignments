@@ -30,9 +30,9 @@ if os.path.exists("csvfile.csv"):
             game_data.append(row)
 else:
     game_data = [
-        {"Title": "The Legend of Zelda: Breath of the Wild", "Developer": "Nintendo", "Release Date": "March 3, 2017"},
-        {"Title": "God of War", "Developer": "Santa Monica Studio", "Release Date": "April 20, 2018"},
-        {"Title": "Red Dead Redemption 2", "Developer": "Rockstar Games", "Release Date": "October 26, 2018"}
+        {"Title": "The Legend of Zelda: Breath of the Wild", "Developer": "Nintendo", "Release Date": "March 3 2017"},
+        {"Title": "God of War", "Developer": "Santa Monica Studio", "Release Date": "April 20 2018"},
+        {"Title": "Red Dead Redemption 2", "Developer": "Rockstar Games", "Release Date": "October 26 2018"}
     ]
 
 # yeah we be adding our rows with a for loop from our dictionary
