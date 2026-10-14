@@ -38,6 +38,13 @@ else:
 # yeah we be adding our rows with a for loop from our dictionary
 for game in game_data:
     table.add_row(game["Title"], game["Developer"], game["Release Date"])
+
+# we have to add the table to a csv file
+with open("csvfile.csv", "w") as file:           
+    file.write("Title,Developer,Release Date\n")  # this makes a header row for the file
+    # we use a for loop to write each row of data to the csv file from our dictionary
+    for game in game_data:
+        file.write(f"{game['Title']},{game['Developer']},{game['Release Date']}\n")
         
 """okay so this probably unnecessary, but I couldn't pull data out of the rich table.
 I think because the rich table doesn't actually hold data that way? So the dictionary
