@@ -39,6 +39,7 @@ else:
 for game in game_data:
     table.add_row(game["Title"], game["Developer"], game["Release Date"])
 
+# if this isn't here, without a starting csv file, the program will not include the first three initial rows in the csv file
 # we have to add the table to a csv file
 with open("csvfile.csv", "w") as file:           
     file.write("Title,Developer,Release Date\n")  # this makes a header row for the file
