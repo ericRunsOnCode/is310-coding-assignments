@@ -19,3 +19,28 @@ table.add_row("Red Dead Redemption 2", "Rockstar Games", "October 26, 2018")
 console.print(table)
 console.print("\n[bold green] Enter your own video game data below:[/bold green]")
 
+# we use a while loop to let the user enter more than one row 
+while True:
+
+    game_title = input("Enter the title of the video game (or type 'exit' to quit): ") 
+
+    if game_title.lower() == 'exit':                                                    # we use .lower in case we type with capitals 
+        break                                                                           # this gets us out of the loop
+
+    game_developer = input("Enter the developer of the video game: ")
+    game_release_date = input("Enter the release date of the video game: ")
+
+    # we gotta ask if the submission is good
+    confirmation = input(f"Are you sure you want to add '{game_title}' by '{game_developer}' released on '{game_release_date}'? (yes/no): ")
+
+    if confirmation.lower() == 'yes':
+        table.add_row(game_title, game_developer, game_release_date)
+        console.print("Entry added. Add another row.", style = "bold green")
+
+        with open("csvfile.csv", "a") as file:                                  
+            file.write(f"{game_title},{game_developer},{game_release_date}\n")
+
+    else:
+        console.print("Entry not added. Please try again.", style = "bold red")
+
+console.print(table)
