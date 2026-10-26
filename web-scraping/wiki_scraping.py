@@ -120,17 +120,29 @@ def main():
         temp = get_internal_links(fetch_soup(locale))
         list_of_unique_links.append(count_links(temp))
 
-    monster_dict = {
-        "location": monster_location_names,
-        "monster_list" : list_of_monster_lists,
-        "word_count": list_of_total_words,
-        "number_of_links": list_of_unique_links
-    }
+    monster_table = []
 
-    with open('super.csv', 'w', newline='') as f:
-        writer = csv.DictWriter(f,fieldnames=monster_dict.keys())
+    for location, monsters, words, links in zip(
+        monster_location_names,
+        list_of_monster_lists,
+        list_of_total_words,
+        list_of_unique_links,
+    ):
+        monster_table.append(
+            {
+                "Location": location,
+                "Monster_list": monsters,
+                "Total_Words": words,
+                "Total_Links": links
+            }
+        )
+
+    fieldnames = ["Location", "Monster_list", "Total_Words", "Total_Links"]
+    with open("super.csv", mode="w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerow(monster_dict)
+        writer.writerows(monster_table) 
+
     
     
 
