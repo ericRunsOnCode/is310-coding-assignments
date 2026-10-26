@@ -127,9 +127,10 @@ def main():
         "number_of_links": list_of_unique_links
     }
 
-    with open("super.csv", "w") as f:
-        w = csv.writer(f)
-        w.writerows(monster_dict.items())
+    with open('super.csv', 'w', newline='') as f:
+        writer = csv.DictWriter(f,fieldnames=monster_dict.keys())
+        writer.writeheader()
+        writer.writerow(monster_dict)
     
     
 
