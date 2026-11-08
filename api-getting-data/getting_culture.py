@@ -67,6 +67,10 @@ def getGlobalAchievementData(achievements):
     booleans = []
     if category_response.status_code == 200:
         data = category_response.json()
+        json_str = json.dumps(data)
+        with open ("SteamAPI.json", "w") as f:
+            f.write(json_str)
+            
         for achievement in data["achievementpercentages"]["achievements"]:
             global_achievement_names.append(achievement["name"].lower())
         global_achievement_names.sort()
@@ -79,7 +83,7 @@ def getGlobalAchievementData(achievements):
     else:
         console.print("[red]Failed to fetch global achievement data.")
         return None
-
+    
     
 
 
