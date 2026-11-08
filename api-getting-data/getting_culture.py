@@ -1,6 +1,5 @@
-from asyncio.windows_events import NULL
-import glob
 import time
+import json
 import csv
 import apikey
 import requests
@@ -48,7 +47,9 @@ def get_achievements():
             achievement_name_list.append(names[0].replace(" ", "_").lower()) # <-- doing this to get in it line with the formatting of the steam api
             # achievement_description_list.append(names[2]) # we dont need the descriptions 
 
-
+    json_str = json.dumps(data)
+    with open ("FandomWiki.json", "w") as f:
+        f.write(json_str)
 
     return achievement_name_list
 
@@ -78,6 +79,8 @@ def getGlobalAchievementData(achievements):
     else:
         console.print("[red]Failed to fetch global achievement data.")
         return None
+
+    
 
 
 
